@@ -525,8 +525,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (!config) {
         config = await BusinessConfigModel.create({
           tenantId,
-          tradeNameAr: "كلاوني كافيه",
-          tradeNameEn: "Cluny Cafe",
+          tradeNameAr: "كيروكس كافيه",
+          tradeNameEn: "Qirox Cafe",
           activityType: "cafe",
           isFoodEnabled: false,
           isDrinksEnabled: true,

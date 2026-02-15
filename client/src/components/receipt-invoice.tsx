@@ -3,7 +3,7 @@ import html2canvas from "html2canvas";
 import { Button } from "@/components/ui/button";
 import { Download, Printer } from "lucide-react";
 import type { Order } from "@shared/schema";
-import logoImage from "../assets/cluny-logo.png";
+import QiroxLogo from "@assets/QIROX_LOGO_1771194264304.png";
 import { useRef, useState, useEffect } from "react";
 import QRCode from "qrcode";
 
@@ -202,10 +202,10 @@ export function ReceiptInvoice({ order, variant = "button" }: ReceiptInvoiceProp
         {/* Header */}
         <div className="text-center mb-8 pb-6 border-b-2 border-primary/20">
           <div className="flex justify-center mb-4">
-            <img src={logoImage} alt="Logo" className="h-20 w-20" />
+            <img src={QiroxLogo} alt="Logo" className="h-20 w-auto" />
           </div>
           <h1 className="text-3xl font-bold text-primary mb-2">فاتورة استلام</h1>
-          <p className="text-gray-600 text-lg">متجر CLUNY CAFE</p>
+          <p className="text-gray-600 text-lg">متجر QIROX CAFE</p>
         </div>
 
         {/* Order Info */}

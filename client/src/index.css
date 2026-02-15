@@ -34,8 +34,7 @@
   --elevate-2: rgba(0,0,0, .08);
 
   /* ═══════════════════════════════════════════════════════════════
-     🎨 CLUNY CAFE - Modern Clean Design System
-     White Background with Green & Blue Accents (Noon Food Style)
+     🎨 QIROX CAFE - Modern Design System
      ═══════════════════════════════════════════════════════════════ */
   
   --background: 220 25% 10%; /* Deep navy */
@@ -45,79 +44,66 @@
   --card-foreground: 0 0% 92%; /* Light text */
   --card-border: 220 18% 20%; /* Card border */
 
-  --sidebar: 180 40% 12%; /* Deep teal sidebar */
+  --sidebar: 220 30% 8%; /* Deep navy sidebar */
   --sidebar-foreground: 0 0% 92%; /* Light text */
-  --sidebar-border: 180 35% 16%; /* Dark border */
-  --sidebar-primary: 160 55% 50%; /* Bright green */
-  --sidebar-primary-foreground: 0 0% 100%; /* White text */
-  --sidebar-accent: 180 30% 20%; /* Elevated accent */
-  --sidebar-accent-foreground: 0 0% 90%; /* Light text */
-  --sidebar-ring: 160 55% 50%; /* Green ring */
+  --sidebar-border: 220 25% 12%; /* Dark border */
+  --sidebar-primary: 180 100% 50%; /* Qirox Cyan */
+  --sidebar-primary-foreground: 220 30% 8%; /* Dark text */
+  --sidebar-accent: 220 25% 15%; /* Elevated accent */
+  --sidebar-accent-foreground: 180 100% 50%; /* Cyan text */
+  --sidebar-ring: 180 100% 50%; /* Cyan ring */
 
   /* Popover */
-  --popover: 0 0% 100%; /* Pure white */
-  --popover-foreground: 220 20% 15%; /* Text */
-  --popover-border: 220 10% 90%; /* Subtle border */
+  --popover: 220 22% 14%; 
+  --popover-foreground: 0 0% 95%; 
+  --popover-border: 220 18% 20%; 
 
-  /* Primary - Cluny Custom Gray-Blue */
-  --primary: 187 7% 67%; /* #a5afb0 */
-  --primary-foreground: 0 0% 100%; /* White text for contrast on Gray-Blue */
+  /* Primary - Qirox Cyan */
+  --primary: 180 100% 50%; 
+  --primary-foreground: 220 30% 8%; 
 
-  /* Secondary - Light Gray */
-  --secondary: 187 10% 96%; /* Light Gray-Blue background */
-  --secondary-foreground: 187 10% 30%; /* Text */
+  /* Secondary */
+  --secondary: 220 18% 20%; 
+  --secondary-foreground: 0 0% 90%; 
 
-  /* Muted - Gray */
-  --muted: 187 5% 90%; /* Professional muted */
-  --muted-foreground: 187 5% 45%; /* Gray text */
+  /* Muted */
+  --muted: 220 12% 25%; 
+  --muted-foreground: 220 10% 65%; 
 
-  /* Accent - Custom Gray-Blue Accent */
-  --accent: 187 7% 67%; /* #a5afb0 */
-  --accent-foreground: 0 0% 100%; /* White text */
+  /* Accent */
+  --accent: 180 100% 50%; 
+  --accent-foreground: 220 30% 8%; 
 
-  /* Destructive - Premium Red */
-  --destructive: 0 75% 55%; /* Elegant red */
-  --destructive-foreground: 0 0% 100%; /* White text */
+  /* Destructive */
+  --destructive: 0 75% 55%; 
+  --destructive-foreground: 0 0% 100%; 
 
-  /* Success - Emerald Green */
-  --success: 160 70% 40%; /* Elegant emerald */
-  --success-foreground: 0 0% 100%; /* White text */
+  /* Success */
+  --success: 160 70% 40%; 
+  --success-foreground: 0 0% 100%; 
 
-  /* Warning - Amber */
-  --warning: 38 95% 55%; /* Rich amber */
-  --warning-foreground: 38 100% 15%; /* Dark text */
+  /* Warning */
+  --warning: 38 95% 55%; 
+  --warning-foreground: 38 100% 15%; 
 
   /* Input & Focus */
-  --input: 187 10% 90%; /* Light Gray-Blue input */
-  --ring: 187 7% 67%; /* Gray-Blue focus ring */
-
-  /* Charts - Premium Palette */
-  --chart-1: 187 7% 67%; /* Gray-Blue */
-  --chart-2: 200 70% 50%; /* Ocean Blue */
-  --chart-3: 160 70% 40%; /* Emerald */
-  --chart-4: 0 75% 55%; /* Ruby */
-  --chart-5: 270 60% 55%; /* Amethyst */
+  --input: 220 20% 16%; 
+  --ring: 180 100% 50%; 
 
   /* Typography */
   --font-sans: 'IBM Plex Sans Arabic', 'Tajawal', sans-serif;
   --font-serif: 'Playfair Display', serif;
   --font-display: 'Playfair Display', serif;
   --font-mono: 'SF Mono', Menlo, monospace;
-  --radius: 0.625rem; /* 10px - subtle rounded corners */
+  --radius: 0.625rem; 
 
-  /* Premium Shadows with Gold Tint */
-  --shadow-2xs: 0 1px 2px 0 rgba(43, 40, 35, 0.03);
-  --shadow-xs: 0 1px 3px 0 rgba(43, 40, 35, 0.05);
-  --shadow-sm: 0 2px 4px -1px rgba(43, 40, 35, 0.06), 0 1px 2px -1px rgba(43, 40, 35, 0.04);
-  --shadow: 0 4px 6px -1px rgba(43, 40, 35, 0.08), 0 2px 4px -2px rgba(43, 40, 35, 0.05);
-  --shadow-md: 0 6px 10px -2px rgba(43, 40, 35, 0.1), 0 3px 6px -3px rgba(43, 40, 35, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(43, 40, 35, 0.12), 0 4px 6px -4px rgba(43, 40, 35, 0.08);
-  --shadow-xl: 0 20px 25px -5px rgba(43, 40, 35, 0.15), 0 8px 10px -6px rgba(43, 40, 35, 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgba(43, 40, 35, 0.25);
-  
-  /* Gold Glow Shadows */
-  --shadow-gold: 0 4px 14px -2px rgba(212, 175, 55, 0.25);
-  --shadow-gold-lg: 0 10px 30px -5px rgba(212, 175, 55, 0.35);
+  /* Shadows with Cyan Glow */
+  --shadow-2xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-xs: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 4px -1px rgba(0, 255, 255, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
+  --shadow: 0 4px 6px -1px rgba(0, 255, 255, 0.15), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
+  --shadow-gold: 0 4px 14px -2px rgba(0, 255, 255, 0.25);
+  --shadow-gold-lg: 0 10px 30px -5px rgba(0, 255, 255, 0.4);
 
   --tracking-normal: 0em;
   --spacing: 0.25rem;

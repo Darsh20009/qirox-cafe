@@ -5,8 +5,8 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   en: {
     translation: {
-      "app.name": "CLUNY",
-      "app.tagline": "Premium Coffee",
+      "app.name": "QIROX",
+      "app.tagline": "Build systems. Stay human.",
       "nav.cart": "Cart",
       "nav.profile": "Profile",
       "nav.my_card": "My Card",
@@ -136,10 +136,10 @@ const resources = {
         "added_desc": "Item has been successfully added to your cart"
       },
       "points": {
-        "cluny_points": "Cluny Points",
-        "your_balance": "Your balance",
-        "points_unit": "points",
-        "points_discount": "Cluny Points discount",
+        "cluny_points": "نقاط كيروكس",
+        "your_balance": "رصيدك",
+        "points_unit": "نقطة",
+        "points_discount": "خصم نقاط كيروكس",
         "send_code": "Send Code",
         "enter_points": "Number of points",
         "enter_points_amount": "Please enter the number of points",
@@ -391,8 +391,8 @@ const resources = {
   },
   ar: {
     translation: {
-      "app.name": "cluny",
-      "app.tagline": "cafe",
+      "app.name": "كيروكس كافيه",
+      "app.tagline": "Build systems. Stay human.",
       "nav.cart": "السلة",
       "nav.profile": "الملف الشخصي",
       "nav.my_card": "بطاقتي",
@@ -443,8 +443,8 @@ const resources = {
       "menu.empty_menu": "القائمة قيد التحديث",
       "menu.empty_menu_desc": "تابعنا قريباً لمنتجات جديدة",
       "menu.banner.default1.badge": "جديدنا",
-      "menu.banner.default1.title": "لاتيه كلووني المميز",
-      "menu.banner.default1.subtitle": "استمتع بمزيجنا الخاص من القهوة الغنية مع الحليب الكريمي",
+      "menu.banner.default1.title": "كيروكس لاتيه المميز",
+      "menu.banner.default1.subtitle": "استمتع بمزيجنا الخاص المطور بنظام كيروكس",
       "menu.banner.default2.badge": "عرض خاص",
       "menu.banner.default2.title": "قهوة مقطرة طازجة",
       "menu.banner.default2.subtitle": "نختار لك أفضل المحاصيل لنقدم لك تجربة لا تنسى",

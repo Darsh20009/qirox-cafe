@@ -2,7 +2,7 @@ import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { Coffee, Star, MapPin, ChevronLeft, ChevronRight, LogOut, Sparkles, User, KeyRound, X as XIcon } from "lucide-react";
-import clunyLogo from "@/assets/cluny-logo.png";
+import QiroxLogo from "@assets/QIROX_LOGO_1771194264304.png";
 import bannerImage1 from "@assets/banner-coffee-1.png";
 import bannerImage2 from "@assets/banner-coffee-2.png";
 import { useCustomer } from "@/contexts/CustomerContext";
@@ -59,10 +59,10 @@ export default function WelcomePage() {
         {/* Header */}
         <header className="relative z-20 flex items-center justify-between p-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-white/20 backdrop-blur-xl p-1 border border-white/30">
-              <img src={clunyLogo} alt="Logo" className="w-full h-full object-contain rounded-xl" />
+            <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-xl p-1 border border-white/20">
+              <img src={QiroxLogo} alt="Logo" className="w-full h-full object-contain" />
             </div>
-            <span className="text-white font-bold text-lg tracking-wide">CLUNY</span>
+            <span className="text-white font-bold text-lg tracking-widest uppercase">QIROX</span>
           </div>
 
           <div className="flex items-center gap-2">
@@ -135,9 +135,9 @@ export default function WelcomePage() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="w-28 h-28 mx-auto mb-8 rounded-2xl overflow-hidden backdrop-blur-xl p-2 border border-white/20 shadow-xl bg-[#a7b0b1]/30"
+              className="w-40 h-auto mx-auto mb-8 drop-shadow-2xl"
             >
-              <img src={clunyLogo} alt="Logo" className="w-full h-full object-contain rounded-2xl" />
+              <img src={QiroxLogo} alt="QIROX Logo" className="w-full h-auto object-contain" />
             </motion.div>
 
             <motion.div

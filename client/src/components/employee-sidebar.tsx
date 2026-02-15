@@ -2,7 +2,7 @@ import { useLocation } from 'wouter';
 import { LayoutDashboard, ShoppingCart, ClipboardList, Settings, LogOut, User, BarChart3, Warehouse, Wallet, ChefHat, Table, Eye, Coffee, Utensils } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import type { Employee } from '@shared/schema';
-import clunyLogoStaff from "@assets/cluny-logo-staff.png";
+import QiroxLogo from "@assets/QIROX_LOGO_1771194264304.png";
 
 interface EmployeeSidebarProps {
   employee: Employee | null;
@@ -49,12 +49,12 @@ export function EmployeeSidebar({ employee, onLogout }: EmployeeSidebarProps) {
       <div className="p-4 border-b border-border">
         <div className="flex items-center gap-3 mb-2">
           <img 
-            src={clunyLogoStaff} 
-            alt="CLUNY SYSTEMS" 
-            className="w-10 h-10 object-contain rounded-lg"
+            src={QiroxLogo} 
+            alt="QIROX SYSTEMS" 
+            className="w-10 h-10 object-contain"
           />
           <div>
-            <h2 className="text-lg font-bold text-foreground">CLUNY SYSTEMS</h2>
+            <h2 className="text-lg font-bold text-foreground">QIROX SYSTEMS</h2>
             <p className="text-xs text-muted-foreground">نظام الموظفين</p>
           </div>
         </div>

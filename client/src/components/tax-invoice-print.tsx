@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useState } from "react";
 import QRCode from "qrcode";
 import JsBarcode from "jsbarcode";
-import clunyLogo from "@assets/cluny-logo-customer.png";
+import QiroxLogo from "@assets/QIROX_LOGO_1771194264304.png";
 
 interface OrderItem {
   coffeeItem: {
@@ -37,10 +37,10 @@ interface TaxInvoiceProps {
 
 const TAX_RATE = 0.15;
 const VAT_NUMBER = "311234567890003";
-const COMPANY_NAME = "كلاوني كافيه";
-const COMPANY_NAME_EN = "CLUNY CAFE";
+const COMPANY_NAME = "كيروكس كافيه";
+const COMPANY_NAME_EN = "QIROX CAFE";
 const COMPANY_CR = "1010123456";
-const COMPANY_VAT_NAME = "شركة كلاوني للخدمات الغذائية"; // Added for ZATCA compliance
+const COMPANY_VAT_NAME = "شركة كيروكس للأنظمة"; // Updated for brand consistency
 const DEFAULT_BRANCH = "فرع الرباط"; // Default branch
 const DEFAULT_ADDRESS = "حي الرياض، الرباط، المملكة المغربية"; // Default address
 
@@ -214,8 +214,8 @@ export const TaxInvoicePrint = forwardRef<HTMLDivElement, TaxInvoiceProps>(
       <div ref={ref} className="hidden print:block">
         <div className="max-w-[80mm] mx-auto bg-white text-black p-3 font-sans" dir="rtl">
           <div className="text-center mb-4 pb-4 border-b-2 border-dashed border-gray-800">
-            <div className="w-20 h-20 mx-auto mb-2">
-              <img src={clunyLogo} alt="CLUNY CAFE" className="w-full h-full object-contain" />
+            <div className="w-20 h-auto mx-auto mb-2">
+              <img src={QiroxLogo} alt="QIROX CAFE" className="w-full h-auto object-contain" />
             </div>
             <h1 className="text-2xl font-bold text-gray-900">{COMPANY_NAME}</h1>
             <p className="text-sm text-gray-600 font-medium">{COMPANY_NAME_EN}</p>
@@ -453,7 +453,7 @@ export const TaxInvoicePrint = forwardRef<HTMLDivElement, TaxInvoiceProps>(
             
             <div className="text-xs text-gray-500">
               <p>تابعونا على وسائل التواصل الاجتماعي</p>
-              <p className="font-mono font-bold text-amber-700">@CLUNY CAFE</p>
+              <p className="font-mono font-bold text-cyan-700">@QIROX CAFE</p>
             </div>
             
             <div className="mt-3 pt-2 border-t border-gray-300 text-[9px] text-gray-400">

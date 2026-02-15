@@ -89,6 +89,9 @@ setInterval(async () => {
     const { TableModel, CustomerModel } = await import("@shared/schema");
     const { sendReservationExpiryWarningEmail } = await import("./mail-service");
 
+    const businessConfig = await BusinessConfigModel.findOne({ tenantId: 'demo-tenant' });
+    const businessName = businessConfig?.tradeNameAr || 'كيروكس كافيه';
+
     const now = new Date();
     const fifteenMinutesFromNow = new Date(now.getTime() + 15 * 60000);
 

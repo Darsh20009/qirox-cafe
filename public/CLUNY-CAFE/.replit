@@ -1,0 +1,56 @@
+modules = ["nodejs-20", "web", "bash"]
+[nix]
+channel = "stable-25_05"
+packages = ["unzip"]
+
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
+waitForPort = 5000
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 24678
+externalPort = 3000
+
+[deployment]
+deploymentTarget = "autoscale"
+run = ["node", "./dist/index.cjs"]
+build = ["npm", "run", "build"]
+
+[userenv]
+
+[userenv.shared]
+MONGODB_URI = "mongodb+srv://Vercel-Admin-CLUNY-CAFE:TOTY20009a@cluny-cafe.idvtc04.mongodb.net/?appName=CLUNY-CAFE"
+SMTP_HOST = "mail.smtp2go.com"
+SMTP_PORT = "587"
+NOTIFICATION_EMAIL = "noreply@cluny.cafe"
+SMTP_USER = "cluny cafe"
+SMTP_PASS = "CLUNY123cafe"
+SMTP_FROM = "noreply@cluny.cafe"
+SMTP2GO_API_KEY = "api-B90C9CEECC6D49DA8A7B448FD8E6A140"

@@ -7,17 +7,17 @@
 }
 
 :root {
-  --primary: #6b4226;
-  --primary-light: #a0764a;
-  --primary-dark: #3e2412;
-  --accent: #d4a574;
-  --bg: #faf7f4;
-  --bg-dark: #1a1a1a;
-  --text: #333;
-  --text-light: #666;
-  --white: #fff;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
+  --primary: #f0f0f0;
+  --primary-light: #ffffff;
+  --primary-dark: #cccccc;
+  --accent: #ffffff;
+  --bg: #1a1a1a;
+  --bg-dark: #111111;
+  --text: #e0e0e0;
+  --text-light: #aaaaaa;
+  --white: #ffffff;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.6);
   --radius: 12px;
   --transition: all 0.3s ease;
 }
@@ -59,7 +59,7 @@ h1, h2, h3, h4 {
 
 .btn-primary {
   background: var(--primary);
-  color: var(--white);
+  color: #1a1a1a;
 }
 
 .btn-primary:hover {
@@ -72,7 +72,7 @@ h1, h2, h3, h4 {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 10px;
-  color: var(--primary-dark);
+  color: var(--white);
 }
 
 .section-subtitle {
@@ -93,10 +93,10 @@ h1, h2, h3, h4 {
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(26, 26, 26, 0.95);
   backdrop-filter: blur(10px);
   padding: 12px 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -117,14 +117,6 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 
-.navbar.scrolled .logo {
-  color: var(--primary-dark);
-}
-
-.logo span {
-  color: var(--accent);
-}
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -138,10 +130,6 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
   transition: var(--transition);
   position: relative;
-}
-
-.navbar.scrolled .nav-links a {
-  color: var(--text);
 }
 
 .nav-links a:hover {
@@ -180,10 +168,6 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 
-.navbar.scrolled .nav-toggle span {
-  background: var(--text);
-}
-
 .hero {
   height: 100vh;
   min-height: 600px;
@@ -197,7 +181,7 @@ h1, h2, h3, h4 {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
 }
 
 .hero-content {
@@ -233,9 +217,9 @@ h1, h2, h3, h4 {
 
 .menu-tab {
   padding: 10px 28px;
-  border: 2px solid var(--primary-light);
+  border: 2px solid #444;
   background: transparent;
-  color: var(--primary);
+  color: var(--text-light);
   border-radius: 50px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -245,9 +229,9 @@ h1, h2, h3, h4 {
 
 .menu-tab.active,
 .menu-tab:hover {
-  background: var(--primary);
-  color: var(--white);
-  border-color: var(--primary);
+  background: var(--white);
+  color: #1a1a1a;
+  border-color: var(--white);
 }
 
 .menu-grid {
@@ -258,7 +242,7 @@ h1, h2, h3, h4 {
 
 .menu-item {
   padding: 25px;
-  background: var(--white);
+  background: #2a2a2a;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: var(--transition);
@@ -278,7 +262,7 @@ h1, h2, h3, h4 {
 
 .menu-item-header h3 {
   font-size: 1.15rem;
-  color: var(--primary-dark);
+  color: var(--white);
 }
 
 .price {
@@ -305,7 +289,7 @@ h1, h2, h3, h4 {
 .featured-card {
   border-radius: var(--radius);
   overflow: hidden;
-  background: var(--white);
+  background: #2a2a2a;
   box-shadow: var(--shadow);
   transition: var(--transition);
 }
@@ -327,7 +311,7 @@ h1, h2, h3, h4 {
 
 .featured-info h3 {
   margin-bottom: 10px;
-  color: var(--primary-dark);
+  color: var(--white);
   font-size: 1.3rem;
 }
 
@@ -338,7 +322,7 @@ h1, h2, h3, h4 {
 
 .about {
   padding: 100px 0;
-  background: var(--white);
+  background: var(--bg);
 }
 
 .about-grid {
@@ -367,7 +351,7 @@ h1, h2, h3, h4 {
 
 .testimonials {
   padding: 100px 0;
-  background: var(--bg);
+  background: var(--bg-dark);
 }
 
 .testimonial-grid {
@@ -378,7 +362,7 @@ h1, h2, h3, h4 {
 }
 
 .testimonial-card {
-  background: var(--white);
+  background: #2a2a2a;
   padding: 35px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -386,7 +370,7 @@ h1, h2, h3, h4 {
 }
 
 .stars {
-  color: #f4a261;
+  color: var(--white);
   font-size: 1.2rem;
   margin-bottom: 15px;
   letter-spacing: 3px;
@@ -400,13 +384,13 @@ h1, h2, h3, h4 {
 }
 
 .author {
-  color: var(--primary);
+  color: var(--white);
   font-weight: 600;
 }
 
 .hours {
   padding: 100px 0;
-  background: var(--primary-dark);
+  background: var(--bg-dark);
   color: var(--white);
 }
 
@@ -422,7 +406,7 @@ h1, h2, h3, h4 {
 }
 
 .hours-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   padding: 40px;
   border-radius: var(--radius);
   backdrop-filter: blur(5px);
@@ -431,7 +415,7 @@ h1, h2, h3, h4 {
 .hours-card h3 {
   margin-bottom: 25px;
   font-size: 1.5rem;
-  color: var(--accent);
+  color: var(--white);
 }
 
 .hours-card ul {
@@ -442,7 +426,7 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   font-size: 0.95rem;
 }
 
@@ -454,7 +438,7 @@ h1, h2, h3, h4 {
 .phone {
   margin-top: 15px;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--white);
 }
 
 .contact {
@@ -477,12 +461,13 @@ h1, h2, h3, h4 {
 .contact-form textarea {
   width: 100%;
   padding: 15px 20px;
-  border: 2px solid #e0d8d0;
+  border: 2px solid #333;
   border-radius: var(--radius);
   font-family: "Inter", sans-serif;
   font-size: 0.95rem;
   transition: var(--transition);
-  background: var(--white);
+  background: #2a2a2a;
+  color: var(--white);
 }
 
 .contact-form textarea {
@@ -493,7 +478,7 @@ h1, h2, h3, h4 {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: var(--primary-light);
+  border-color: var(--white);
 }
 
 .contact-form .btn {
@@ -502,7 +487,7 @@ h1, h2, h3, h4 {
 
 .footer {
   background: var(--bg-dark);
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.5);
   padding: 60px 0 30px;
 }
 
@@ -534,13 +519,13 @@ h1, h2, h3, h4 {
 }
 
 .footer-links a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   transition: var(--transition);
 }
 
 .footer-links a:hover {
-  color: var(--accent);
+  color: var(--white);
 }
 
 .social-icons {
@@ -552,7 +537,7 @@ h1, h2, h3, h4 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,11 +547,11 @@ h1, h2, h3, h4 {
 }
 
 .social-icons a:hover {
-  background: var(--primary);
+  background: #444;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 20px;
   text-align: center;
   font-size: 0.85rem;
@@ -595,12 +580,12 @@ h1, h2, h3, h4 {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background: var(--white);
+    background: #2a2a2a;
     flex-direction: column;
     padding: 80px 40px;
     gap: 25px;
     transition: right 0.3s ease;
-    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
   }
 
   .nav-links.active {
@@ -608,7 +593,7 @@ h1, h2, h3, h4 {
   }
 
   .nav-links a {
-    color: var(--text) !important;
+    color: var(--white) !important;
     font-size: 1.1rem;
   }
 

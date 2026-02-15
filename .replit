@@ -43,3 +43,8 @@ deploymentTarget = "autoscale"
 publicDir = "public"
 run = ["npm", "run"]
 build = ["npm", "run", "build"]
+
+[userenv]
+
+[userenv.shared]
+MONGODB_URI = "mongodb+srv://Vercel-Admin-qiroxcafe:ASDqwe123@qiroxcafe.j8ukhq5.mongodb.net/?appName=qiroxcafe"

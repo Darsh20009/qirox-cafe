@@ -118,8 +118,8 @@ const DriverLogin = lazy(() => import("@/pages/driver-login"));
 const DeliveryTracking = lazy(() => import("@/pages/delivery-tracking"));
 const WelcomePage = lazy(() => import("@/pages/welcome"));
 const EmployeeHome = lazy(() => import("@/pages/employee-home"));
-import clunyLogoCustomer from "@assets/cluny-logo-customer.png";
-import clunyLogoStaff from "@assets/cluny-logo-staff.png";
+import clunyLogoCustomer from "/logo.png";
+import clunyLogoStaff from "/logo.png";
 
 const PageLoader = () => {
   const isEmployee = window.location.pathname.startsWith('/employee') || 

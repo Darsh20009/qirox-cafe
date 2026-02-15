@@ -38,23 +38,21 @@
      White Background with Green & Blue Accents (Noon Food Style)
      ═══════════════════════════════════════════════════════════════ */
   
-  /* Base Colors - Pure White & Clean */
-  --background: 0 0% 100%; /* Pure white background */
-  --foreground: 220 20% 20%; /* Dark charcoal text */
-  --border: 220 10% 90%; /* Light gray border */
-  --card: 0 0% 100%; /* Pure white cards */
-  --card-foreground: 220 20% 15%; /* Rich dark text */
-  --card-border: 220 10% 92%; /* Subtle border */
+  --background: 220 25% 10%; /* Deep navy */
+  --foreground: 0 0% 95%; /* Light text */
+  --border: 220 20% 18%; /* Subtle dark border */
+  --card: 220 22% 14%; /* Elevated card surface */
+  --card-foreground: 0 0% 92%; /* Light text */
+  --card-border: 220 18% 20%; /* Card border */
 
-  /* Sidebar - Deep Teal Theme */
-  --sidebar: 187 10% 20%; /* Darker Gray-Blue for Sidebar */
-  --sidebar-foreground: 0 0% 98%; /* Light text */
-  --sidebar-border: 187 10% 25%; /* Subtle border */
-  --sidebar-primary: 187 7% 67%; /* Gray-Blue primary */
+  --sidebar: 180 40% 12%; /* Deep teal sidebar */
+  --sidebar-foreground: 0 0% 92%; /* Light text */
+  --sidebar-border: 180 35% 16%; /* Dark border */
+  --sidebar-primary: 160 55% 50%; /* Bright green */
   --sidebar-primary-foreground: 0 0% 100%; /* White text */
-  --sidebar-accent: 187 7% 30%; /* Elevated Gray-Blue */
-  --sidebar-accent-foreground: 0 0% 95%; /* Light text */
-  --sidebar-ring: 187 7% 67%; /* Gray-Blue ring */
+  --sidebar-accent: 180 30% 20%; /* Elevated accent */
+  --sidebar-accent-foreground: 0 0% 90%; /* Light text */
+  --sidebar-ring: 160 55% 50%; /* Green ring */
 
   /* Popover */
   --popover: 0 0% 100%; /* Pure white */

@@ -16,15 +16,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Qirox Cafe"
+args = "Cluny Cafe Dev"
 
 [[workflows.workflow]]
-name = "Qirox Cafe"
+name = "Cluny Cafe Dev"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npx serve public -l 5000 --no-clipboard"
+args = "npm run dev -- --host 0.0.0.0 --port 5000"
 waitForPort = 5000
 
 [workflows.workflow.metadata]

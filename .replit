@@ -1,4 +1,4 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "web", "bash"]
 [agent]
 expertMode = true
 
@@ -16,15 +16,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Cluny Cafe Dev"
+args = "Start application"
 
 [[workflows.workflow]]
-name = "Cluny Cafe Dev"
+name = "Start application"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npm run dev -- --host 0.0.0.0 --port 5000"
+args = "npm run dev"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
@@ -34,10 +34,8 @@ outputType = "webview"
 localPort = 5000
 externalPort = 80
 
-[[ports]]
-localPort = 24678
-externalPort = 3001
-
 [deployment]
-deploymentTarget = "static"
+deploymentTarget = "autoscale"
 publicDir = "public"
+run = ["npm", "run"]
+build = ["npm", "run", "build"]

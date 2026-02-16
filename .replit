@@ -22,13 +22,13 @@ args = "Start application"
 name = "Start application"
 author = "agent"
 
+[workflows.workflow.metadata]
+outputType = "webview"
+
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
-
-[workflows.workflow.metadata]
-outputType = "webview"
 
 [[ports]]
 localPort = 5000
@@ -36,12 +36,12 @@ externalPort = 80
 
 [[ports]]
 localPort = 24678
-externalPort = 3001
+externalPort = 3000
 
 [deployment]
 deploymentTarget = "autoscale"
 publicDir = "public"
-run = ["npm", "run"]
+run = ["node", "./dist/index.cjs"]
 build = ["npm", "run", "build"]
 
 [userenv]

@@ -41,7 +41,7 @@ const COMPANY_NAME = "كيروكس كافيه";
 const COMPANY_NAME_EN = "QIROX CAFE";
 const COMPANY_CR = "1010123456";
 const COMPANY_VAT_NAME = "شركة كيروكس للأنظمة"; // Updated for brand consistency
-const DEFAULT_BRANCH = "فرع الرباط"; // Default branch
+const DEFAULT_BRANCH = "فرع كيروكس الرئيسي"; // Default branch
 const DEFAULT_ADDRESS = "حي الرياض، الرباط، المملكة المغربية"; // Default address
 
 function generateZATCAQRCode(data: {

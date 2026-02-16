@@ -8,11 +8,10 @@ import { useCustomer } from "@/contexts/CustomerContext";
 import { useLocation } from "wouter";
 import { Coffee, ShoppingCart, Flame, Snowflake, Star, Cake, User, Plus, Search, QrCode, ChevronLeft, ChevronRight, MapPin, Clock, Utensils, Sparkles } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import banner1 from "@/assets/images/banner-1.png";
-import banner2 from "@/assets/images/banner-2.png";
-const bannerImage1 = banner1;
-const bannerImage2 = banner2;
-import clunyLogo from "@assets/cluny-logo-customer.png";
+import banner1 from "@assets/ChatGPT_Image_Jan_2,_2026,_04_26_37_PM_1771213940291.png";
+import banner2 from "@assets/qirox_1771213927991.png";
+import banner3 from "@assets/Screenshot_2026-01-27_120537_1771213900268.png";
+import qiroxLogo from "@assets/QIROX_LOGO_1771194264304.png";
 import type { CoffeeItem, IProductAddon, IPromoOffer } from "@shared/schema";
 import { AddToCartModal } from "@/components/add-to-cart-modal";
 import { Tag, Gift } from "lucide-react";
@@ -103,17 +102,25 @@ export default function MenuPage() {
     // 2. Add fixed banner slides
     slides.push({
       image: banner1,
-      badge: t("menu.banner.default1.badge"),
-      title: t("menu.banner.default1.title"),
-      subtitle: t("menu.banner.default1.subtitle"),
+      badge: "QIROX EXCLUSIVE",
+      title: "Build systems. Stay human.",
+      subtitle: "نظام إدارة المقاهي الأكثر ذكاءً",
       linkType: "offer",
     });
     slides.push({
       image: banner2,
-      badge: t("menu.banner.default2.badge"),
-      title: t("menu.banner.default2.title"),
-      subtitle: t("menu.banner.default2.subtitle"),
+      badge: "NEW TECH",
+      title: "Digital Evolution",
+      subtitle: "نحو مستقبل رقمي أفضل لعملك",
       linkType: "offer",
+    });
+    slides.push({
+      image: banner3,
+      badge: "QIROX SYSTEMS",
+      title: "Total Control",
+      subtitle: "إدارة متكاملة لكل تفاصيل مشروعك",
+      linkType: "external",
+      externalUrl: "https://qirox.cafe"
     });
 
     // 3. Add dynamic "Smart" slides based on inventory/products
@@ -362,10 +369,10 @@ export default function MenuPage() {
 
   return (
     <div dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} className="min-h-screen bg-background pb-24 font-sans overflow-x-hidden text-foreground">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-xl px-4 h-16 flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-xl px-4 h-16 flex items-center justify-between border-b border-white/10">
         <div className="flex items-center gap-3">
           <div className="relative">
-            <img src={clunyLogo} className="w-10 h-10 rounded-2xl border-2 border-white/30 shadow-lg backdrop-blur-xl bg-[#a7b0b1]/30" alt="Logo" />
+            <img src={qiroxLogo} className="w-10 h-10 object-contain drop-shadow-md" alt="Logo" />
           </div>
           <div>
             <h1 className="text-lg font-bold leading-none text-white drop-shadow-md">{t("app.name")}</h1>

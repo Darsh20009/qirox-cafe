@@ -58,52 +58,25 @@
   --popover-foreground: 0 0% 95%; 
   --popover-border: 220 18% 20%; 
 
-  /* Primary - Qirox Cyan */
-  --primary: 180 100% 50%; 
-  --primary-foreground: 220 30% 8%; 
+  /* Primary - Qirox Cyan (Darkened) */
+  --primary: 180 100% 25%; 
+  --primary-foreground: 0 0% 100%; 
 
   /* Secondary */
-  --secondary: 220 18% 20%; 
+  --secondary: 220 30% 10%; 
   --secondary-foreground: 0 0% 90%; 
 
   /* Muted */
-  --muted: 220 12% 25%; 
-  --muted-foreground: 220 10% 65%; 
+  --muted: 220 20% 15%; 
+  --muted-foreground: 220 10% 60%; 
 
-  /* Accent */
-  --accent: 180 100% 50%; 
-  --accent-foreground: 220 30% 8%; 
+  /* Accent - Keep a bit of glow but dark base */
+  --accent: 180 100% 20%; 
+  --accent-foreground: 0 0% 100%; 
 
-  /* Destructive */
-  --destructive: 0 75% 55%; 
-  --destructive-foreground: 0 0% 100%; 
-
-  /* Success */
-  --success: 160 70% 40%; 
-  --success-foreground: 0 0% 100%; 
-
-  /* Warning */
-  --warning: 38 95% 55%; 
-  --warning-foreground: 38 100% 15%; 
-
-  /* Input & Focus */
-  --input: 220 20% 16%; 
-  --ring: 180 100% 50%; 
-
-  /* Typography */
-  --font-sans: 'IBM Plex Sans Arabic', 'Tajawal', sans-serif;
-  --font-serif: 'Playfair Display', serif;
-  --font-display: 'Playfair Display', serif;
-  --font-mono: 'SF Mono', Menlo, monospace;
-  --radius: 0.625rem; 
-
-  /* Shadows with Cyan Glow */
-  --shadow-2xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-  --shadow-xs: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
-  --shadow-sm: 0 2px 4px -1px rgba(0, 255, 255, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
-  --shadow: 0 4px 6px -1px rgba(0, 255, 255, 0.15), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
-  --shadow-gold: 0 4px 14px -2px rgba(0, 255, 255, 0.25);
-  --shadow-gold-lg: 0 10px 30px -5px rgba(0, 255, 255, 0.4);
+  /* Buttons darkening logic */
+  --button-hover: 180 100% 15%;
+  --button-active: 180 100% 10%;
 
   --tracking-normal: 0em;
   --spacing: 0.25rem;

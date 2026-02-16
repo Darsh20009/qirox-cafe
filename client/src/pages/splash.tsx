@@ -6,6 +6,7 @@ import ButtonPourAnimation from "@/components/button-pour-animation";
 import { ChevronLeft } from "lucide-react";
 
 import QiroxLogo from "@assets/QIROX_LOGO_1771194264304.png";
+import LoadingBg from "@assets/Screenshot_2026-01-27_120537_1771213900268.png";
 
 export default function SplashScreen() {
   const [, setLocation] = useLocation();
@@ -34,9 +35,15 @@ export default function SplashScreen() {
 
   return (
     <div className="fixed inset-0 bg-[#0A0F14] flex items-center justify-center z-50 overflow-hidden font-ibm-arabic">
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-cyan-500/20 rounded-full blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/20 rounded-full blur-[120px]" />
+      <div className="absolute inset-0">
+        <img 
+          src={LoadingBg} 
+          alt="" 
+          className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0F14]/80 via-transparent to-[#0A0F14]/80" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-cyan-500/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[120px]" />
       </div>
 
       <AnimatePresence>

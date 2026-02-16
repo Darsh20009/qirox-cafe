@@ -1,4 +1,9 @@
-## Recent Changes (February 11, 2026)
+## Recent Changes (February 16, 2026)
+- **Full Rebranding to QIROX (كيركس)**: Rebranded the entire system from Cluny to QIROX. Updated app name, tagline, and all system-wide references in both Arabic and English.
+- **Unified QIROX Systems Portal**: Renamed the employee portal to QIROX SYSTEMS, ensuring consistent branding across all management and operational interfaces.
+- **Technical Branding Alignment**: Updated PWA manifests, metadata, and i18n translation keys to reflect the new identity.
+
+## Previous Changes (February 11, 2026)
 - **Payment Gateway Management System**: Admin can select NeoLeap or Geidea as payment provider, enter encrypted credentials (masked in frontend), toggle payment methods (cash, POS, qahwa card, STC Pay, bank transfer). Setup instructions included for each provider. Connection testing button validates API credentials server-side. Config stored in BusinessConfig.paymentGateway.
 - **Secure Online Payment Flow**: Checkout detects online payment methods (neoleap/geidea/apple_pay/bank_card), calls `/api/payments/init` for hosted redirect, stores sessionId, and on callback verifies payment server-side via `/api/payments/verify` before creating order. PCI compliant - no card data touches our servers.
 - **Config-Driven Payment Methods**: `/api/payment-methods` endpoint returns enabled methods based on admin configuration. Customer checkout and payment components dynamically render only enabled methods. Admin toggles control visibility.
@@ -24,11 +29,11 @@
 - Fixed translation bug in customer navigation where "nav.referrals" was showing a key instead of "كسب النقاط".
 - Improved real-time order alerts in POS with WebSocket integration and persistent notification sound toggles.
 
-# CLUNY CAFE – Digital Coffee Shop Management System
+# QIROX CAFE – Digital Coffee Shop Management System
 
 ## Overview
 
-CLUNY CAFE is a comprehensive digital management system designed to streamline operations for coffee shops. It caters to both customers through the CLUNY CAFE portal and employees via the CLUNY SYSTEMS portal. The system aims to modernize coffee shop management, enhance customer experience, and improve operational efficiency. Key capabilities include integrated ERP accounting, ZATCA-compliant invoicing, robust delivery management, employee shift and geofencing, and a customer loyalty program.
+QIROX CAFE is a comprehensive digital management system designed to streamline operations for coffee shops. It caters to both customers through the QIROX CAFE portal and employees via the QIROX SYSTEMS portal. The system aims to modernize coffee shop management, enhance customer experience, and improve operational efficiency. Key capabilities include integrated ERP accounting, ZATCA-compliant invoicing, robust delivery management, employee shift and geofencing, and a customer loyalty program.
 
 ## User Preferences
 
@@ -39,7 +44,7 @@ CLUNY CAFE is a comprehensive digital management system designed to streamline o
 
 ## System Architecture
 
-### Design System (CLUNY)
+### Design System (QIROX)
 
 The system employs a modern, clean design inspired by Noon Food, featuring a vibrant teal green primary color (`#2D9B6E`) and ocean blue accent (`#2196F3`) against a pure white background. Typography uses Playfair Display for headings and Inter for body text, with Cairo as a fallback for Arabic.
 
@@ -70,7 +75,21 @@ The system employs a modern, clean design inspired by Noon Food, featuring a vib
 - **Branch Geofencing:** Configurable `geofenceRadius` and `geofenceBoundary` (polygon-based) for precise attendance and location-based management. Includes manager notifications for employee alerts.
 - **Shift Management:** Supports flexible shift scheduling, including overnight shifts, and employee assignment to shifts.
 - **Employee Permissions (RBAC):** Granular, page-level access control using `allowedPages` in employee profiles and a `PageGuard` component.
-- **PWA Configuration:** Dynamic manifest switching between CLUNY CAFE (customer) and CLUNY SYSTEMS (employee) based on the route.
+- **PWA Configuration:** Dynamic manifest switching between QIROX CAFE (customer) and QIROX SYSTEMS (employee) based on the route.
+
+### Technical Stack
+
+- **Backend:** Node.js, Express.js, MongoDB with Mongoose, Zod.
+- **Frontend:** React, TypeScript, Vite, TanStack Query, shadcn/ui, Tailwind CSS, Wouter.
+- **Security:** AuthGuard (role-based), PageGuard (page-level permissions), local storage for session management.
+
+## External Dependencies
+
+- **Database:** MongoDB Atlas (QIROX-CAFE Project)
+- **Mapping/Geospatial:** `turf.js` for polygon-based geofencing.
+- **Charting:** `recharts` for financial dashboards.
+- **Delivery Platforms (Integrations):** Noon Food, Hunger Station, Keeta, Marsool, Careem.
+- **QR Code Generation:** `zatca-utils.ts` (custom utility module).
 
 ### Technical Stack
 

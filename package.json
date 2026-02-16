@@ -1,7 +1,7 @@
 {
-  "name": "cluny-cafe",
+  "name": "qirox-cafe",
   "version": "2.0.0",
-  "description": "CLUNY CAFE - نظام إدارة المقاهي الرقمي الشامل | CLUNY SYSTEMS - Employee Portal",
+  "description": "QIROX CAFE - نظام إدارة المقاهي الرقمي الشامل | QIROX SYSTEMS - Employee Portal",
   "type": "module",
   "license": "MIT",
   "scripts": {

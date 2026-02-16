@@ -1,7 +1,7 @@
 {
-  "name": "CLUNY CAFE",
-  "short_name": "CLUNY",
-  "description": "أفضل تجربة قهوة رقمية من CLUNY CAFE",
+  "name": "QIROX CAFE",
+  "short_name": "QIROX",
+  "description": "أفضل تجربة قهوة رقمية من كيروكس كافيه",
   "start_url": "/menu",
   "display": "standalone",
   "background_color": "#F7F8F8",

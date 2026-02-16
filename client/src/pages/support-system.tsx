@@ -205,7 +205,7 @@ const mockFAQs: FAQItem[] = [
 const mockArticles: Article[] = [
   {
     id: "art-1",
-    title: "دليل البدء السريع لنظام CLUNY CAFE",
+    title: "دليل البدء السريع لنظام QIROX CAFE",
     category: "البداية",
     excerpt: "تعرف على كيفية إعداد نظامك في 5 دقائق فقط...",
     views: 1250,

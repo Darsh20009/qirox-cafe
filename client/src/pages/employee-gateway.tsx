@@ -13,9 +13,9 @@ export default function EmployeeGateway() {
 
   // Set SEO metadata
   useEffect(() => {
-    document.title = "بوابة الموظفين - CLUNY CAFE | نظام الإدارة";
+    document.title = "بوابة الموظفين - QIROX CAFE | نظام الإدارة";
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'بوابة دخول الموظفين لنظام إدارة CLUNY CAFE - نظام متكامل لإدارة الطلبات والمبيعات');
+    if (metaDesc) metaDesc.setAttribute('content', 'بوابة دخول الموظفين لنظام إدارة QIROX CAFE - نظام متكامل لإدارة الطلبات والمبيعات');
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -33,7 +33,7 @@ export default function EmployeeGateway() {
     <div dir="rtl" className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-foreground mb-2 font-playfair">CLUNY SYSTEMS</h1>
+          <h1 className="text-3xl font-bold text-foreground mb-2 font-playfair">QIROX SYSTEMS</h1>
           <p className="text-muted-foreground font-cairo">بوابة الموظفين</p>
         </div>
 

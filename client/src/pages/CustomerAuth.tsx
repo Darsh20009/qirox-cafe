@@ -173,11 +173,11 @@ export default function CustomerAuth() {
         <CardHeader className="space-y-3 text-center pb-6">
           <div className="flex justify-center">
             <div className="w-20 h-20 rounded-2xl overflow-hidden shadow-lg shadow-accent/50 backdrop-blur-xl border border-white/20 bg-[#a7b0b1]/30">
-              <img src="/logo.png" alt="CLUNY CAFE" className="w-full h-full object-cover rounded-2xl" />
+              <img src="/logo.png" alt="QIROX CAFE" className="w-full h-full object-cover rounded-2xl" />
             </div>
           </div>
           <CardTitle className="tracking-tight text-3xl font-bold text-[#a7b0b1]">
-            {i18n.language === 'ar' ? "مرحباً بك في CLUNY CAFE" : "Welcome to CLUNY CAFE"}
+            {i18n.language === 'ar' ? "مرحباً بك في QIROX CAFE" : "Welcome to QIROX CAFE"}
           </CardTitle>
           <CardDescription className="text-lg text-[#b2babc]">
             {i18n.language === 'ar' ? "سجل دخولك للحصول على حسابك الخاص" : "Sign in to access your account"}

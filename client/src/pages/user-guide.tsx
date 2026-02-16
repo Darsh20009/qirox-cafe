@@ -338,7 +338,7 @@ export default function UserGuidePage() {
           </Button>
           <h1 className="text-2xl md:text-3xl font-bold text-accent dark:text-accent flex items-center gap-2">
             <BookOpen className="w-8 h-8" />
-            دليل استخدام CLUNY CAFE
+            دليل استخدام QIROX CAFE
           </h1>
           <div className="w-20"></div>
         </div>

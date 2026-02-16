@@ -163,7 +163,7 @@ export default function CustomerProfilePage() {
           <div>
             <h1 className="text-2xl font-bold text-white flex items-center gap-2">
               <Coffee className="w-6 h-6" />
-              CLUNY CAFE
+              QIROX CAFE
             </h1>
           </div>
           <Button
@@ -382,7 +382,7 @@ export default function CustomerProfilePage() {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold font-ibm-plex-arabic">بطاقة الولاء</h3>
-                      <p className="text-xs text-white/70 font-ibm-arabic">CLUNY CAFE REWARDS</p>
+                      <p className="text-xs text-white/70 font-ibm-arabic">QIROX CAFE REWARDS</p>
                     </div>
                   </div>
                   <div className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/30">

@@ -65,7 +65,7 @@ export default function EmployeeSplash() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {/* CLUNY CAFE Logo */}
+        {/* QIROX CAFE Logo */}
         <motion.div
           className="relative"
           animate={{

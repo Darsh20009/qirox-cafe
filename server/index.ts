@@ -86,7 +86,7 @@ setInterval(async () => {
   
   isMaintenanceRunning = true;
   try {
-    const { TableModel, CustomerModel } = await import("@shared/schema");
+    const { TableModel, CustomerModel, BusinessConfigModel } = await import("@shared/schema");
     const { sendReservationExpiryWarningEmail } = await import("./mail-service");
 
     const businessConfig = await BusinessConfigModel.findOne({ tenantId: 'demo-tenant' });

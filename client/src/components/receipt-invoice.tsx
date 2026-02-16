@@ -46,7 +46,7 @@ export function ReceiptInvoice({ order, variant = "button" }: ReceiptInvoiceProp
     const generateTrackingQR = async () => {
       if (!order || !order.orderNumber) return;
       try {
-        const trackingUrl = `https://www.cluny.cafe/tracking?order=${order.orderNumber}`;
+        const trackingUrl = `https://qirox.cafe/tracking?order=${order.orderNumber}`;
         const qrDataUrl = await QRCode.toDataURL(trackingUrl, {
           width: 150,
           margin: 1,

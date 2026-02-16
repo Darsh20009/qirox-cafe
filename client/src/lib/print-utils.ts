@@ -169,7 +169,7 @@ export async function printEmployeeCard(data: EmployeePrintData): Promise<void> 
 <body>
   <div class="card">
     <div class="header">
-      <div class="company-name">CLUNY CAFE</div>
+      <div class="company-name">QIROX CAFE</div>
       <div class="employee-title">بطاقة تعريف الموظف</div>
     </div>
     <div class="employee-name">${data.employeeName}</div>
@@ -243,11 +243,11 @@ export async function printKitchenOrder(data: KitchenOrderData): Promise<void> {
 
 const TAX_RATE = 0.15;
 const VAT_NUMBER = "311234567890003";
-const COMPANY_NAME = "CLUNY CAFE";
-const COMPANY_NAME_EN = "CLUNY CAFE";
-const COMPANY_CR = "1010XXXXXX";
-const DEFAULT_BRANCH = "الفرع الرئيسي";
-const DEFAULT_ADDRESS = "الرياض، المملكة العربية السعودية";
+const COMPANY_NAME = "كيروكس كافيه";
+const COMPANY_NAME_EN = "QIROX CAFE";
+const COMPANY_CR = "1010123456";
+const DEFAULT_BRANCH = "فرع كيروكس الرئيسي";
+const DEFAULT_ADDRESS = "حي الرياض، الرباط، المملكة المغربية";
 
 function generateZATCAQRCode(data: {
   sellerName: string;
